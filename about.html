@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Index &mdash; scikit-rf</title>
+    <title>About &mdash; scikit-rf</title>
     
     <link rel="stylesheet" href="_static/agogo.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,23 +26,23 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="author" title="About these documents" href="about.html" />
-    <link rel="top" title="scikit-rf" href="#" /> 
+    <link rel="author" title="About these documents" href="#" />
+    <link rel="top" title="scikit-rf" href="index.html" /> 
   </head>
   <body>
     <div class="header-wrapper">
       <div class="header">
-          <div class="logo"><a href="#">
+          <div class="logo"><a href="index.html">
             <img class="logo" src="_static/scikit-rf-title-flat.svg" alt="Logo"/>
           </a></div>
        
         <div class="rel">
-          <a href="#">Home</a> · 
+          <a href="index.html">Home</a> · 
 <a href="download.html">Download</a> · 
 <a href="documentation.html">Documentation</a> · 
 <a href="http://github.com/scikit-rf/scikit-rf/wiki/Development">Develop</a> · 
 <a href="https://github.com/scikit-rf/scikit-rf">Source</a> · 
-<a href="about.html">About</a>
+<a href="#">About</a>
 
         </div>
        </div>
@@ -109,60 +109,20 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <style type="text/css">
-  h1 {
-      display: none;
-      margin: 0;
-      padding: 0;
-  }
-</style><div class="section" id="index">
-<h1>Index<a class="headerlink" href="#index" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="description">
-<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><strong>scikit-rf</strong> (aka <tt class="docutils literal"><span class="pre">skrf</span></tt>) is an Object Oriented approach to RF/Microwave engineering implemented in the Python programming language. See some of the <a class="reference internal" href="#features">features</a> below and check out the
-<a class="reference external" href="http://www.scikit-rf.org/doc/dev/tutorials/introduction.html">introduction</a> for a quick look at using <strong>scikit-rf</strong>.</div></blockquote>
+  <div class="section" id="about">
+<h1>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h1>
+<p><strong>scikit-rf</strong> was born in the <a class="reference external" href="http://www.virginia.edu">University of Virginia&#8217;s</a> millimeter wave research lab in 2009, to provide functionality that was not available commercially. It was originally called mwavepy, but was re-branded a <a class="reference external" href="http://www.scikits.appspot.com/">scikit</a> to emphasize its relationship to the scientific python community.</p>
+<p>It is currently being developed by a Alex Arsenovic, and <a class="reference external" href="https://github.com/scikit-rf/scikit-rf/graphs/contributors">others on Github</a> .</p>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="section" id="getting-started">
-<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<div style="float: left; padding-right: 2em;"><p>Plot touchstone data on a smith chart, in <strong>3 lines</strong>.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">skrf</span> <span class="kn">as</span> <span class="nn">rf</span>
-<span class="n">ntwk</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">Network</span><span class="p">(</span><span class="s">&#39;ring slot.s2p&#39;</span><span class="p">)</span>
-<span class="n">ntwk</span><span class="o">.</span><span class="n">plot_s_smith</span><span class="p">()</span>
-</pre></div>
+<div class="section" id="people">
+<h2>People<a class="headerlink" href="#people" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="alex">
+<h3>Alex<a class="headerlink" href="#alex" title="Permalink to this headline">¶</a></h3>
+<img alt="_images/suspender-crop.jpg" class="align-left" src="_images/suspender-crop.jpg" style="width: 200px;" />
+<p><strong>Alex Arsenovic</strong> is from Guinea, Virginia. He received a B.S. degree in electrical engineering from the University of Virginia in 2007, and Ph.D. in 2012. Currently he lives in Charlottesville Virignia, working as a consultant. His current interests include scientific python, THz metrology, geometric algebra, and windsurfing.</p>
 </div>
-<p>For more information, tutorials, and</p>
-<p>examples, see the <a class="reference internal" href="documentation.html"><em>Documentation</em></a></p>
-</div>
-
-<div class="gallery_image" style="margin-top: 0; margin-bottom: 1em;">
-<img src="_static/smith_chart.png"/>
-</div>
-
-<div style="clear: left;"/></div>
-<div class="section" id="help-feedback-bugs">
-<h2>Help/Feedback/BUGs<a class="headerlink" href="#help-feedback-bugs" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>For questions about usage, suggestions, general feedback please see the <a class="reference external" href="http://groups.google.com/group/scikit-rf">Mailing List</a></li>
-<li>If you find a problem in scikit-rf, please post an issue to the <a class="reference external" href="https://github.com/scikit-rf/scikit-rf/issues">Issue Tracker</a></li>
-<li>Still need help? Contact me at <strong>arsenovic at virginia.edu</strong></li>
-</ul>
-</div>
-<div class="section" id="features">
-<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Read/Write touchstone (.s2p, s?p) files</li>
-<li>Basic algebraic operations on networks&#8217; scattering parameters</li>
-<li>Cascade/De-embed 2-port networks</li>
-<li>Connect n-port networks</li>
-<li>Plot network parameter data [s, y, z] in ( dB, Phase, Smith chart, ...)</li>
-<li>Save plots in vector format for publication (a feature of matplotlib)</li>
-<li>1-port calibration, given any number of standards (least squares)</li>
-<li>2-port calibration with support for switch-terms.</li>
-<li>Instrument control of some VNA&#8217;s ( partial support for HP8510, HP8720, and R&amp;S ZVA40 )</li>
-<li>Circuit synthesis</li>
-<li>Transmission line models</li>
-</ul>
 </div>
 </div>
 
