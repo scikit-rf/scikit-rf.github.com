@@ -19,7 +19,7 @@ Index
 Description
 ------------
  **scikit-rf** (aka ``skrf``) is an Object Oriented approach to RF/Microwave engineering implemented in the Python programming language. See some of the `features`_ below and check out the   
- `introduction <http://www.scikit-rf.org/doc/dev/tutorials/introduction.html>`_ for a quick look at using **scikit-rf**. 
+ `introduction <http://www.scikit-rf.org/doc/v0.13/tutorials/introduction.html>`_ for a quick look at using **scikit-rf**. 
 
 --------------------------
 Getting Started
