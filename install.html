@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Install &#8212; scikit-rf</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="search" title="Search" href="search.html" />
 <script>
@@ -75,10 +77,11 @@
       padding: 0;
   }
 </style><section id="install">
-<h1>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h1>
-<p><strong>scikit-rf</strong> is supported and tested on Python versions 2.7, 3.5, 3.6. There are several ways to install listed below.</p>
+<h1>Install<a class="headerlink" href="#install" title="Permalink to this heading">¶</a></h1>
+<p><strong>scikit-rf</strong> is supported and tested on <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/scikit-rf" />.</p>
+<p>Current version of <strong>scikit-rf</strong> is <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/scikit-rf" />. There are several ways to install <strong>scikit-rf</strong>, listed below.</p>
 <section id="anaconda-recommended">
-<h2>anaconda (recommended)<a class="headerlink" href="#anaconda-recommended" title="Permalink to this headline">¶</a></h2>
+<h2>anaconda (recommended)<a class="headerlink" href="#anaconda-recommended" title="Permalink to this heading">¶</a></h2>
 <p>The easiest way to install scikit-rf is to first install
 <a class="reference external" href="http://continuum.io/downloads">anaconda</a>. Once anaconda is installe,  you can
 install scikit-rf from the <a class="reference external" href="https://conda-forge.github.io/">conda-forge</a> channel by entering the following into a terminal:</p>
@@ -87,18 +90,23 @@ install scikit-rf from the <a class="reference external" href="https://conda-for
 </div>
 </section>
 <section id="pip">
-<h2>pip<a class="headerlink" href="#pip" title="Permalink to this headline">¶</a></h2>
-<p>If you dont want to install anaconda (really, why not?), you can use  <cite>pip</cite>:</p>
+<h2>pip<a class="headerlink" href="#pip" title="Permalink to this heading">¶</a></h2>
+<p>If you dont want to install anaconda, you can use  <cite>pip</cite>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">scikit</span><span class="o">-</span><span class="n">rf</span>
 </pre></div>
 </div>
+<p><strong>scikit-rf</strong> does not install all optional dependencies by default, but if you need some of them just do</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">scikit</span><span class="o">-</span><span class="n">rf</span><span class="p">[</span><span class="n">plot</span><span class="p">,</span><span class="n">visa</span><span class="p">,</span><span class="n">xlsx</span><span class="p">,</span><span class="n">netw</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>or just a subset of them.</p>
 </section>
 <section id="git">
-<h2>git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h2>
+<h2>git<a class="headerlink" href="#git" title="Permalink to this heading">¶</a></h2>
 <p>The bleeding-edge development version of <strong>scikit-rf</strong> may be installed using:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">rf</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">rf</span><span class="o">.</span><span class="n">git</span>
 <span class="n">cd</span> <span class="n">scikit</span><span class="o">-</span><span class="n">rf</span>
-<span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">.</span>
 </pre></div>
 </div>
 </section>
@@ -120,7 +128,7 @@ install scikit-rf from the <a class="reference external" href="https://conda-for
     </p>
     <p>
         &copy; Copyright 2016, the scikit-rf development team.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.3.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br/>
     </p>
   </div>
 </footer>
