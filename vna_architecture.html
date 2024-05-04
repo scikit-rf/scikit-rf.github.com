@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>New skrf.vi.vna Module &#8212; scikit-rf</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css?v=284a2d1d" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="search" title="Search" href="search.html" />
 <script>
@@ -66,10 +65,30 @@
 
 <div class="container">
   <div class="row">
-    <div class="body col-md-12 content" role="main">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">New skrf.vi.vna Module</a><ul>
+<li><a class="reference internal" href="#legacy-vna-module">Legacy vna module</a></li>
+<li><a class="reference internal" href="#scpi-commands">SCPI Commands</a></li>
+<li><a class="reference internal" href="#yaml-command-syntax">yaml Command Syntax</a></li>
+<li><a class="reference internal" href="#using-the-scpi-functions-to-write-a-driver">Using the SCPI functions to write a Driver</a></li>
+</ul>
+</li>
+</ul>
+
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
       
   <section id="new-skrf-vi-vna-module">
-<h1>New skrf.vi.vna Module<a class="headerlink" href="#new-skrf-vi-vna-module" title="Permalink to this headline">¶</a></h1>
+<h1>New skrf.vi.vna Module<a class="headerlink" href="#new-skrf-vi-vna-module" title="Link to this heading">¶</a></h1>
 <p>As of 2017.02 a new architecture for vna drivers is being implemented.</p>
 <ul class="simple">
 <li><p>VNA drivers will now have a common high level functionality across all vendors implemented in an ABCVNA class.</p></li>
@@ -77,7 +96,7 @@
 <li><p>The low level functions are all implemented as SCPI commands which have a new way of being generated and called</p></li>
 </ul>
 <section id="legacy-vna-module">
-<h2>Legacy vna module<a class="headerlink" href="#legacy-vna-module" title="Permalink to this headline">¶</a></h2>
+<h2>Legacy vna module<a class="headerlink" href="#legacy-vna-module" title="Link to this heading">¶</a></h2>
 <p>The old vna.py module containing drivers for PNA, PNA-X, HP8510, etc. will be available as vna_old.py and can be used as
 follows:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrf.vi.vna_old</span> <span class="kn">import</span> <span class="n">PNA</span>
@@ -85,7 +104,7 @@ follows:</p>
 </div>
 </section>
 <section id="scpi-commands">
-<h2>SCPI Commands<a class="headerlink" href="#scpi-commands" title="Permalink to this headline">¶</a></h2>
+<h2>SCPI Commands<a class="headerlink" href="#scpi-commands" title="Link to this heading">¶</a></h2>
 <p>To learn about SCPI, you can read the <a class="reference external" href="http://www.ivifoundation.org/scpi/">IVI website</a>, or <a class="reference external" href="https://en.wikipedia.org/wiki/Standard_Commands_for_Programmable_Instruments">Wikipedia</a>.  For this tutorial you only need to know that
 SCPI comamnds are provided in a tree structure where similar commands are grouped in branches of the tree.  All scpi
 commands are either ‘set’ commands where the user writes something to instrument or ‘query’ commands where the user
@@ -134,7 +153,7 @@ and ‘command’.  Otherwise, the presence of a mapping item ‘name’, which 
 that the node is a command.  Absent that, the node is assumed to be a branch and is further parsed for more nodes.</p>
 </section>
 <section id="yaml-command-syntax">
-<h2>yaml Command Syntax<a class="headerlink" href="#yaml-command-syntax" title="Permalink to this headline">¶</a></h2>
+<h2>yaml Command Syntax<a class="headerlink" href="#yaml-command-syntax" title="Link to this heading">¶</a></h2>
 <p>For a node that is a command, there are only 2 requirements:</p>
 <ol class="arabic simple">
 <li><p>‘name’ must be provided</p></li>
@@ -182,7 +201,7 @@ The function has three keyword arguments, cnum, mname and param which are enclos
 has a default parameter (int, float or string) then it can be specified with an ‘=’ sign.</p>
 </section>
 <section id="using-the-scpi-functions-to-write-a-driver">
-<h2>Using the SCPI functions to write a Driver<a class="headerlink" href="#using-the-scpi-functions-to-write-a-driver" title="Permalink to this headline">¶</a></h2>
+<h2>Using the SCPI functions to write a Driver<a class="headerlink" href="#using-the-scpi-functions-to-write-a-driver" title="Link to this heading">¶</a></h2>
 <p>The parser outputs a python file with a SCPI class.  The current model for using this class is to initialize a VNA
 class, which in turn initialized a pyvisa resource.  The VNA object then initializes a SCPI object and assigns it to
 self.scpi.  See the abbreviated code from the keysight_pna.py PNA class __init__ method:</p>
@@ -216,8 +235,8 @@ following manner inside vna object methods:</p>
       
     </p>
     <p>
-        &copy; Copyright 2016, the scikit-rf development team.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.3.<br/>
+        &copy; Copyright 2024, the scikit-rf development team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.3.7.<br/>
     </p>
   </div>
 </footer>
