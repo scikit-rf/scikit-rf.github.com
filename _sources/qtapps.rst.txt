@@ -27,7 +27,7 @@ What... why?
     :height: 200
     :align: right
 
-There is a new folder in the scikit-rf repository called `qtapps <https://github.com/scikit-rf/scikit-rf/tree/master/qtapps>`_. It contains a python package called ``skrf_qtwidgets``.
+The repository called `skrf-apps <https://github.com/scikit-rf/skrf-apps>`_ contains a python package called ``skrf_qtwidgets``.
 
 The goal of this package is to provide a reusable set of qt widgets to easily construct gui applications that can measure, process, and analyze data. The two main widgets are a ``QListWidget`` called ``NetworkListWidget`` that provides a container for ``Network`` objects and a plot widget called ``NetworkPlotWidget`` for visualizing networks.
 

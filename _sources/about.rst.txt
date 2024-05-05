@@ -28,8 +28,9 @@ Development History
     :align: right
     :height: 200
 
+**scikit-rf** was created in 2009 by Alex Arsenovic while he was a graduate student at the University of Virginia’s millimeter wave research lab in 2009. It was originally called mwavepy, but was re-branded as a scikit to emphasize its relationship to the scientific python community.
 
-**scikit-rf** was created in 2009 by Alex Arsenovic while he was a graduate student at the University of Virginia's  millimeter wave research lab in 2009. It was originally called mwavepy, but was re-branded a scikit to emphasize its relationship to the scientific python community.  **scikit-rf** is licensed under the :doc:`BSD License <license>` and is currently being actively developed by a group of volunteers  `on Github <https://github.com/scikit-rf/scikit-rf/graphs/contributors>`_ . 
+Since 2019, **scikit-rf** has been actively maintained by Julien Hillairet from the CEA/IRFM institute.  **scikit-rf** is licensed under the :doc:`BSD License <license>` and is currently being actively developed by a group of volunteers  `on Github <https://github.com/scikit-rf/scikit-rf/graphs/contributors>`_ . With more than 80 volunteers having contributed to the package, version 1.0.0 was released in 2024, indicating that the package is sufficiently stable and performant for a widespread adoption.
 
 |
 |
@@ -220,7 +221,7 @@ The French Alternative Energies and Atomic Energy Commission or CEA (French: Com
 |
 |
 
-If your lab, company, or organization uses **scikit-rf** and would like to be listed please contact me at **alexanderarsenovic at gmail.com**
+If your lab, company, or organization uses **scikit-rf** and would like to be listed please contact **julien.hillairet at gmail.com**
 
 |
 |

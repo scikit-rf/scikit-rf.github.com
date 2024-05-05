@@ -8,9 +8,8 @@
 **scikit-rf** will always remain free and open-source. Period. For those who need 
 help, there will always be public channels available:
 
- * `mailing list <http://groups.google.com/group/scikit-rf>`_
- * `slack <https://scikit-rf.slack.com>`_
- * `github <http://github.com/scikit-rf/scikit-rf>`_ 
+ * `Matrix <https://app.element.io/#/room/#scikit-rf:matrix.org>`_
+ * `Github Discussion <https://github.com/scikit-rf/scikit-rf/discussions>`_ 
 
 For those who need private support and
 development services, please see the following list of companies who support scikit-rf. 
@@ -48,7 +47,7 @@ services include:
 |
 |
 
-If you would like to list your company here  please contact me at **alexanderarsenovic at gmail.com**
+If you would like to list your company here  please contact **julien.hillairet at gmail.com**
 
 |
 |
